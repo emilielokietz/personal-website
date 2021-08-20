@@ -21,6 +21,8 @@ header {
     background-color: rgba(140, 163, 163, 0.8);
     position: fixed; 
     width: 100%; 
+    padding:2% 3%;
+    backdrop-filter: blur(5px);
 }
 
 nav {
@@ -71,5 +73,69 @@ footer {
    padding: 1% 0%;
 }
 
+.interessen {
+  display: flex;
+  flex-direction: column;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 1% 0%;
+}
+
+.interessen ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+.interessen li {
+    background-color: rgba(140, 163, 163, 0.8);
+    border-radius: 15px;
+    padding: 0.95%;
+    font-size: 1.1em;
+    display: flex; 
+    margin: 1%;
+
+}
+
+.fähigkeiten {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+
+.fähigkeiten ul{
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrlling: touch;
+    white-space: nowrap;
+    
+}
+
+
+.fähigkeiten li {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  background-color: rgba(140, 163, 163, 0.8);
+  border-radius: 15px;
+  padding: 0.95%;
+  font-size: 1.1em;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+}
 
 
