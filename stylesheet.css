@@ -18,11 +18,12 @@ header {
     justify-content: space-between;
     flex-direction: row;
     align-items: baseline;
-    background-color: rgba(140, 163, 163, 0.8);
+    background: linear-gradient(70deg, rgba(140, 163, 163, 0.8), rgba(76, 95, 95, 0.8));
     position: fixed; 
     width: 100%; 
     padding:2% 3%;
     backdrop-filter: blur(5px);
+    border: 1px solid red;
 }
 
 nav {
@@ -31,11 +32,50 @@ nav {
     justify-content: flex-end;
     text-decoration: none;
     text-transform: uppercase;
+    border: 1px solid greenyellow;
 }
+
 
 nav a {
     margin-left: 20px;
 }
+
+@media (max-width:562px) {
+    header {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    h1 {
+        width: 100%;
+    }
+    nav {
+        justify-content: flex-start;
+    }
+    nav a {   
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+
+
+}
+
+@media (max-width:349px) {
+    header {
+        justify-content: flex-start;
+    }
+    h1 {
+        width: 100%;
+    }
+    nav {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    nav a {   
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+}
+
 
 a:link, a:visited{
     color: inherit;
@@ -96,7 +136,7 @@ h2, h3 {
 
 
 .interessen li {
-    background-color: rgba(140, 163, 163, 0.8);
+    background: linear-gradient(70deg, rgba(140, 163, 163, 0.8), rgba(76, 95, 95, 0.8));
     border-radius: 15px;
     padding: 0.95%;
     font-size: 1.1em;
@@ -128,7 +168,7 @@ h2, h3 {
   text-align: center;
   padding: 14px;
   text-decoration: none;
-  background-color: rgba(140, 163, 163, 0.8);
+  background: linear-gradient(70deg, rgba(140, 163, 163, 0.8), rgba(76, 95, 95, 0.8));
   border-radius: 15px;
   padding: 0.95%;
   font-size: 1.1em;
